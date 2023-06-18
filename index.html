@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            IMDB Clone App
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="body-container">
+            <!-- logo -->
+                <div class="logo">
+                    <div class="logo-box">
+                        <p>
+                            IDMB <span>CLONE</span>
+                        </p>
+                    </div>
+                </div>
+            <!-- end of logo -->
+            <!-- searchbar -->
+                <div class="search-box-container">
+                    <div class="search-box">
+                        <h2>Search Movie</h2>
+                        <input type="text" class="form-control" placeholder="enter a movie name" id="movie-search-box" onkeyup="findMovies()">
+                    <div class="list" id="list">
+                        <div class="list-items">
+                            <div class="list-item-thumbnail">
+                                <img src="rowdy_rathore.jpeg" alt="rowdy rathore poster">
+                            </div>
+                            <div class="item-info">
+                                <h2>Rowdy Rathore</h2>
+                              <ul>
+                                <li>2012</li>
+                                <li>Released: 01-06-2012</li>             
+                              </ul>
+                            </div>
+                        </div>
+                          <div class="list-items">
+                            <div class="list-item-thumbnail">
+                                <img src="mother-india.jpeg" alt="mother-india poster">
+                            </div>
+                            <div class="item-info">
+                                <h2>Mother India</h2>
+                              <ul>
+                                <li>1957</li>
+                                <li>Released: 25-10-1957</li>             
+                              </ul>
+                            </div>
+                        </div>
+                            <div class="list-items">
+                            <div class="list-item-thumbnail">
+                                <img src="devdas.jpeg" alt="devdas poster">
+                            </div>
+                            <div class="item-info">
+                                <h2>Devdas</h2>
+                              <ul>
+                                <li>2002</li>
+                                <li>Released: 12-07-2002</li>             
+                              </ul>
+                            </div>
+                        </div>
+                            <div class="list-items">
+                            <div class="list-item-thumbnail">
+                                <img src="ghayal.jpeg" alt="ghayal movie poster">
+                            </div>
+                            <div class="item-info">
+                                <h2>Ghayal</h2>
+                              <ul>
+                                <li>2016</li>
+                                <li>Released: 05-02-2016</li>             
+                              </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            <!-- searchbar end -->
+            <!-- result section -->
+                <div class="container">
+                    <div class="result-box">
+                        <div class="result-grid" id="result-grid">
+                            <!-- information about movie -->
+                            <div class="poster">
+                                <img src="posters.jpeg" alt="movie-poster">
+                            </div>
+                            <div class="movie-info">
+                                <h3 class="movie-title">Search for a movie</h3>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- result section -->
+
+        </div>
+				<!-- JavaScript file  -->
+                      <script src="script.js"></script>
+    </body>
+</html>
