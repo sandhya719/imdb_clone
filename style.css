@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box; 
+}
+:root{
+ 	--md-dark-color:#1d1d1d; 
+    --dark-color:#171717;
+    --light-dark-color:#292929;
+    --blue-color:#3d149c;
+}
+img{
+ width:100%; 
+ display:block;
+}
+.body-container{
+ min-height:100vh;
+  background-color:lightgrey;
+}
+.body-container .logo-box{
+  max-width:1200px;
+  padding:0 1rem;
+  margin:0 auto;
+}
+.search-box-container{
+ background-color:green; 
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.logo{
+  padding:1rem 0;
+ border-bottom:1px solid var(--light-dark-color); 
+}
+.logo p{
+ font-size:2rem;
+  font-weight:bold;
+ color:midnightblue;
+}
+.search-box{
+ display:flex;
+  align-items:stretch;
+  justify-content:center;
+  flex-direction:column;
+  position:relative;
+}
+.search-box h2{
+ align-self:center;
+  margin-right:1rem;
+  font-size:2rem;
+  color:violet;
+  font-weight:500;
+  margin-bottom:1rem;
+}
+.search-box .form-control{
+  padding:1rem 4rem;
+  color:lightgrey;
+  font-size:1.4rem;
+  border:none;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px; 
+  width:380px;
+  outline:none;
+}
+.list{
+  position:absolute;
+  right:0;
+  top:100%;
+  max-height:200px;
+  overflow-y:scroll;
+  z-index:10;
+
+}
+.list .list-items{
+  background-color:var(--light-dark-color);
+  padding:0.5rem;
+  border-bottom:1px solid var(--dark-color);
+  width:370px;
+  color:#fff;
+  cursor:pointer;
+  transition: background-color 200ms ease;
+  background-color:#817575;
+}
+.list .list-items:hover{
+ background-color:#1f1f1f; 
+}
+.list-items{
+ display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.list-item-thumbnail img{
+ width:150px; 
+  margin-right:2rem;
+}
+.item-info h2{
+ font-weight:200; 
+  font-size:1rem;
+}
+.item-info li{
+ font-size:0.8rem;
+ margin-top:0.5rem;
+  font-weight:600;
+}
+.list::-webkit-scrollbar{
+ width:8px; 
+}
+.list::-webkit-scrollbar-track{
+ box-shadow:inset 0 0 6px rgba(0,0,0,0.3); 
+}
+.list::-webkit-scrollbar-track{
+  background-color:var(--blue-color);
+  outline:none;
+  border-radius:10px;
+}
+.hide-search-list{
+ display:none; 
+}
+.container{
+ padding:3rem 0; 
+}
+.poster img{
+  max-width:80%;
+  margin:auto;
+}
+.movie-info{
+ text-align:center;
+  color:green;
+  font-weight:600;
+  font-size:30px;
+  padding-top:2rem;
+}
+@media(max-width:450px){
+	.logo p{
+		font-size:1.4rem;
+	}
+  .search-box .form-control{
+		width:90%;
+		margin:0 auto;
+    	padding:0.5rem 1rem;
+	}
+  .list{
+   width:90%;
+    right:50%;
+    transform:translateX(50%);
+  }
+}
